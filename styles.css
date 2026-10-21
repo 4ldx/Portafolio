@@ -14,6 +14,7 @@
   --max-width: 1180px;
 }
 * { box-sizing: border-box; }
+
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.6; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
@@ -98,7 +99,18 @@ h2 { font-size: clamp(34px, 4vw, 48px); line-height: 1.14; letter-spacing: -.06e
 .section-intro { max-width: 355px; color: #a5aaa1; font-size: 13px; line-height: 1.85; margin: 0 0 4px; }
 .project-grid { display: grid; grid-template-columns: 1.12fr .88fr; gap: 22px; }
 .project-card { min-width: 0; }
-.project-visual { height: 310px; position: relative; overflow: hidden; border-radius: 5px; border: 1px solid #383d35; }
+
+/* =========================================
+   CORRECCIÓN VISUAL DE LAS TARJETAS (16:9 y fondo unificado)
+   ========================================= */
+.project-visual { 
+  height: auto; 
+  aspect-ratio: 16 / 9; 
+  position: relative; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid #383d35; 
+}
 .restaurant-visual { display: flex; align-items: center; justify-content: center; padding: 19px; background: radial-gradient(ellipse at 50% 45%,#6c321f 0%,#351f18 36%,#1b1c18 76%); }
 .restaurant-window { width: 100%; height: 100%; padding: 15px 18px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid rgba(245,216,178,.25); background: linear-gradient(135deg,rgba(15,16,14,.32),rgba(15,16,14,.08)); color: #f3e6d4; }
 .restaurant-top, .restaurant-bottom { display: flex; justify-content: space-between; gap: 10px; font-size: 7px; letter-spacing: .12em; }
@@ -113,19 +125,23 @@ h2 { font-size: clamp(34px, 4vw, 48px); line-height: 1.14; letter-spacing: -.06e
 .restaurant-bottom { border-top: 1px solid rgba(245,216,178,.2); padding-top: 12px; }
 .visual-open { position: absolute; bottom: 13px; right: 13px; background: var(--accent); color: #171713; font-size: 10px; font-weight: 700; padding: 8px 11px; border-radius: 3px; opacity: 0; transform: translateY(5px); transition: .2s; }
 .restaurant-visual:hover .visual-open, .restaurant-visual:focus-visible .visual-open { opacity: 1; transform: translateY(0); }
-.service-visual { background: #d9e0cd; color: #243127; padding: 18px; }
-.service-mock { height: 100%; position: relative; overflow: hidden; background: linear-gradient(135deg,#e7ebdf,#c8d3bd); padding: 14px 15px; }
-.service-mock-nav { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 2; font-size: 6px; letter-spacing: .05em; }
-.service-mock-nav > span:first-child { font-family: var(--font-display); font-weight: 800; font-size: 11px; letter-spacing: -.05em; }
-.green-dot { color: #66844c; }
-.service-mock-body { position: relative; z-index: 2; padding: 31px 5px; }
-.service-mock-body > span { font-size: 6px; letter-spacing: .16em; }
-.service-mock-body strong { display: block; font-family: var(--font-display); font-size: clamp(31px,3.5vw,43px); line-height: .95; letter-spacing: -.08em; margin: 10px 0 17px; }
-.service-mock-body em { color: #6b8655; font-style: normal; }
-.service-line { width: 100px; height: 3px; border-radius: 3px; background: #b0bca3; }
-.service-chip { display: inline-block; margin-top: 17px; padding: 9px 11px; color: #eff1e9; background: #314132; font-size: 6px; letter-spacing: .06em; }
-.service-sun { position: absolute; right: -25px; bottom: -60px; width: 180px; height: 180px; border-radius: 50%; background: #b0c19f; }
+
+/* Adaptación de la tarjeta de la barbería para mantener la estética oscura y la proporción limpia */
+.service-visual { background: #161a17; color: #e2e8f0; padding: 0; }
+.service-mock { height: 100%; width: 100%; position: relative; overflow: hidden; background: linear-gradient(135deg,#1c241e 0%,#111813 100%); padding: 14px 15px; display: flex; flex-direction: column; justify-content: space-between; }
+.service-visual:hover .visual-open, .service-visual:focus-visible .visual-open { opacity: 1; transform: translateY(0); }
+.service-mock-nav { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 2; font-size: 6px; letter-spacing: .05em; color: #a3a79f; }
+.service-mock-nav > span:first-child { font-family: var(--font-display); font-weight: 800; font-size: 11px; letter-spacing: -.05em; color: #f5f4ef; }
+.green-dot { color: #9bc67a; }
+.service-mock-body { position: relative; z-index: 2; padding: 10px 5px; }
+.service-mock-body > span { font-size: 6px; letter-spacing: .16em; color: #a3a79f; }
+.service-mock-body strong { display: block; font-family: var(--font-display); font-size: clamp(25px,3vw,38px); line-height: .95; letter-spacing: -.08em; margin: 8px 0 12px; color: #f5f4ef; }
+.service-mock-body em { color: #a7c58c; font-style: normal; }
+.service-line { width: 100px; height: 3px; border-radius: 3px; background: #3b4238; }
+.service-chip { display: inline-block; margin-top: 12px; padding: 8px 10px; color: #171713; background: var(--accent); font-size: 6px; font-weight: 700; letter-spacing: .06em; }
+.service-sun { position: absolute; right: -25px; bottom: -60px; width: 140px; height: 140px; border-radius: 50%; background: rgba(167, 197, 140, 0.08); }
 .concept-label { position: absolute; right: 25px; top: 25px; z-index: 3; background: rgba(23,31,22,.84); color: #e3eadc; padding: 7px 9px; font-size: 8px; letter-spacing: .08em; }
+
 .project-info { display: flex; justify-content: space-between; gap: 20px; padding: 21px 2px 0; }
 .project-type { color: var(--accent-light); font-size: 9px; font-weight: 700; letter-spacing: .12em; margin-bottom: 9px; }
 .project-info h3 { font-size: 22px; letter-spacing: -.04em; margin-bottom: 8px; }
@@ -133,8 +149,16 @@ h2 { font-size: clamp(34px, 4vw, 48px); line-height: 1.14; letter-spacing: -.06e
 .round-arrow { flex: 0 0 37px; height: 37px; display: grid; place-items: center; border: 1px solid #4a4e46; border-radius: 50%; color: var(--accent); transition: .2s; }
 a.round-arrow:hover { color: #111; background: var(--accent); border-color: var(--accent); }
 .muted-arrow { color: #9ea697; }
-.portfolio-note { color: #858b81; font-size: 10px; margin: 28px 0 0; }
+
+/* Corrección de la posición de la nota al pie del portafolio para que ocupe todo el ancho inferior */
+.portfolio-note { 
+  grid-column: 1 / -1; 
+  color: #858b81; 
+  font-size: 10px; 
+  margin: 35px 0 0; 
+}
 .portfolio-note span { color: var(--accent); margin-right: 7px; }
+
 .services-section { background: #171917; border-block: 1px solid var(--line); }
 .service-list { border-top: 1px solid var(--line); }
 .service-row { display: grid; grid-template-columns: 50px 1.1fr 1fr 25px; align-items: center; gap: 22px; padding: 27px 0; border-bottom: 1px solid var(--line); }
@@ -208,9 +232,9 @@ a.round-arrow:hover { color: #111; background: var(--accent); border-color: var(
   h2 { font-size: 38px; }
   .section-intro { margin-top: 19px; font-size: 12px; }
   .project-grid { grid-template-columns: 1fr; gap: 35px; }
-  .project-visual { height: 270px; }
+  .project-visual { height: auto; }
   .restaurant-center strong { font-size: 37px; }
-  .service-mock-body strong { font-size: 39px; }
+  .service-mock-body strong { font-size: 34px; }
   .project-info h3 { font-size: 20px; }
   .service-row { padding: 22px 0; gap: 13px; grid-template-columns: 22px 1fr 20px; }
   .service-title h3 { font-size: 16px; }
@@ -271,6 +295,7 @@ a.round-arrow:hover { color: #111; background: var(--accent); border-color: var(
     flex-direction: column;
   }
 }
+
 /* =========================================
    ESTILOS MEJORADOS DEL BOTÓN DE CORREO
    ========================================= */
@@ -319,7 +344,7 @@ a.round-arrow:hover { color: #111; background: var(--accent); border-color: var(
 #copyNotification {
   display: none;
   margin-top: 10px;
-  color: #a7c58c; /* Verde del tema */
+  color: #a7c58c;
   font-weight: 600;
   font-size: 12px;
 }
