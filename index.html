@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Black Gold Digital | Website as a Service Studio</title>
+  <title>Black Gold Digital | Elite Website as a Service Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,34 +11,43 @@
 </head>
 <body>
 
-  <!-- Canvas de fondo interactivo de partículas en red -->
+  <!-- Canvas de Partículas Interactivas en Malla -->
   <canvas id="meshCanvas"></canvas>
 
-  <!-- Header -->
+  <!-- Encabezado con Selector de Moneda -->
   <header class="site-header">
     <div class="header-inner">
       <a href="#home" class="brand">
         BLACK GOLD<span class="gold-dot">.</span>
       </a>
+
+      <!-- Selector de Moneda Interactivo -->
+      <div class="currency-switcher">
+        <button type="button" class="curr-btn active" data-curr="USD" data-symbol="$" data-rate="1">USD ($)</button>
+        <button type="button" class="curr-btn" data-curr="MXN" data-symbol="$" data-rate="20">MXN ($)</button>
+        <button type="button" class="curr-btn" data-curr="EUR" data-symbol="€" data-rate="0.92">EUR (€)</button>
+      </div>
+
       <nav class="nav-menu">
         <a href="#home">Inicio</a>
         <a href="#demos">Showcase</a>
-        <a href="#planes">Planes WaaS</a>
-        <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold%20Digital,%20me%20interesa%20un%20sitio%20web%20para%20mi%20negocio." target="_blank" class="nav-btn-gold">Iniciar Proyecto ↗</a>
+        <a href="#comparativa">¿Por qué WaaS?</a>
+        <a href="#planes">Planes</a>
+        <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold%20Digital,%20me%20interesa%20un%20sitio%20web." target="_blank" class="nav-btn-gold">Iniciar Proyecto ↗</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Principal de Alto Impacto -->
+    <!-- Hero Principal Ultra-Elegante -->
     <section class="hero" id="home">
-      <div class="hero-badge">⚡ DIGITAL EXPERIENCE STUDIO</div>
-      <h1 class="hero-title">SITIOS WEB DE ALTA GAMA <br><span class="text-gold">EN MODELO DE SUSCRIPCIÓN</span></h1>
-      <p class="hero-sub">Diseñamos, alojamos y mantenemos la presencia digital de tu negocio. Sin costos iniciales desorbitados, todo incluido en una cómoda suscripción mensual.</p>
+      <div class="hero-badge">⚡ ELITE WEB ARCHITECTURE STUDIO</div>
+      <h1 class="hero-title">PRESENCIA DIGITAL PRO <br><span class="text-gold">SIN COSTOS DE DESARROLLO</span></h1>
+      <p class="hero-sub">Construimos, alojamos y mantenemos el sitio web de tu negocio en la infraestructura más rápida del mundo. Todo incluido en una suscripción mensual inteligente.</p>
       
       <div class="hero-actions">
-        <a href="#demos" class="btn-primary-gold">Explorar Catálogo Live</a>
-        <a href="#planes" class="btn-glass">Ver Planes desde $49 USD</a>
+        <a href="#demos" class="btn-primary-gold">Explorar Demos Interactivas</a>
+        <a href="#planes" class="btn-glass">Ver Planes WaaS</a>
       </div>
 
       <div class="hero-metrics">
@@ -48,8 +57,8 @@
         </div>
         <div class="metric-line"></div>
         <div class="metric-item">
-          <strong>48h</strong>
-          <span>Despliegue En Vivo</span>
+          <strong>&lt; 0.4s</strong>
+          <span>Velocidad de Carga</span>
         </div>
         <div class="metric-line"></div>
         <div class="metric-item">
@@ -59,26 +68,25 @@
       </div>
     </section>
 
-    <!-- Showcase / Portafolio de Demos -->
+    <!-- Showcase / Portafolio con Efecto 3D Tilt -->
     <section class="section" id="demos">
       <div class="section-header">
         <span class="sub-heading">DEMOSTRACIONES EN VIVO</span>
-        <h2>Catálogo de Plantillas Interactivas</h2>
-        <p class="section-desc">Pasa el cursor sobre los proyectos para explorar la previsualización y acceder a la demostración interactiva completa.</p>
+        <h2>Catálogo de Plantillas de Alto Nivel</h2>
+        <p class="section-desc">Pasa el cursor sobre las tarjetas para experimentar la interacción visual 3D.</p>
       </div>
 
       <div class="portfolio-grid">
 
         <!-- Card 1: Gym -->
-        <article class="portfolio-card">
+        <article class="portfolio-card tilt-card">
+          <div class="glow-effect"></div>
           <div class="browser-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">gym.blackgoldstudios.workers.dev</span>
           </div>
           <div class="card-image-wrap">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Apex Performance Club Preview">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Apex Performance Preview">
             <div class="image-overlay">
               <a href="https://gym.blackgoldstudios.workers.dev" target="_blank" rel="noopener" class="preview-btn">Probar Demo Live ↗</a>
             </div>
@@ -86,16 +94,15 @@
           <div class="card-info">
             <span class="card-niche">Fitness & Performance</span>
             <h3>Apex Performance Club</h3>
-            <p>Visor de disciplinas en tiempo real, tipografía masiva e integración de pases VIP.</p>
+            <p>Visor dinámico de disciplinas, tipografía masiva e integración de pases VIP.</p>
           </div>
         </article>
 
         <!-- Card 2: Pizzería -->
-        <article class="portfolio-card">
+        <article class="portfolio-card tilt-card">
+          <div class="glow-effect"></div>
           <div class="browser-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">pizzeria.blackgoldstudios.workers.dev</span>
           </div>
           <div class="card-image-wrap">
@@ -112,11 +119,10 @@
         </article>
 
         <!-- Card 3: Taller Mecánico -->
-        <article class="portfolio-card">
+        <article class="portfolio-card tilt-card">
+          <div class="glow-effect"></div>
           <div class="browser-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">taller.blackgoldstudios.workers.dev</span>
           </div>
           <div class="card-image-wrap">
@@ -128,16 +134,15 @@
           <div class="card-info">
             <span class="card-niche">Automotriz & Detailing</span>
             <h3>Motors & Co.</h3>
-            <p>Cotizador dinámico por marca/año de vehículo y agendamiento directo de servicio.</p>
+            <p>Cotizador dinámico por vehículo y agendamiento directo de mantenimiento.</p>
           </div>
         </article>
 
         <!-- Card 4: Panadería -->
-        <article class="portfolio-card">
+        <article class="portfolio-card tilt-card">
+          <div class="glow-effect"></div>
           <div class="browser-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">panaderia.blackgoldstudios.workers.dev</span>
           </div>
           <div class="card-image-wrap">
@@ -149,16 +154,15 @@
           <div class="card-info">
             <span class="card-niche">Repostería & Bakery</span>
             <h3>Miga & Miel</h3>
-            <p>Diseño editorial artesanal con armador de cajas surtidas y cotizador en tiempo real.</p>
+            <p>Diseño editorial artesanal con armador de cajas surtidas y pedidos en tiempo real.</p>
           </div>
         </article>
 
         <!-- Card 5: Cafetería -->
-        <article class="portfolio-card">
+        <article class="portfolio-card tilt-card">
+          <div class="glow-effect"></div>
           <div class="browser-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">cafeteria.blackgoldstudios.workers.dev</span>
           </div>
           <div class="card-image-wrap">
@@ -170,19 +174,61 @@
           <div class="card-info">
             <span class="card-niche">Coffee Shop & Bistro</span>
             <h3>Café Central</h3>
-            <p>Menú interactivo de bebidas de especialidad, barra de orígenes y pedidos ágiles.</p>
+            <p>Menú interactivo de bebidas de especialidad, métodos de extracción y barra de orígenes.</p>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- Planes de Suscripción WaaS -->
+    <!-- Tabla Comparativa de Alto Impacto -->
+    <section class="section" id="comparativa">
+      <div class="section-header">
+        <span class="sub-heading">POR QUÉ BLACK GOLD</span>
+        <h2>Agencia Tradicional vs. Modelo WaaS</h2>
+        <p class="section-desc">Descubre por qué las empresas modernas eligen el modelo de suscripción.</p>
+      </div>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Agencia Tradicional</th>
+              <th class="highlight-col">Black Gold WaaS ⚡</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Costo Inicial (Inversión)</strong></td>
+              <td>$2,000 – $5,000 USD por adelantado</td>
+              <td class="highlight-col"><strong>$0 USD (Solo tu suscripción)</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Tiempo de Entrega</strong></td>
+              <td>4 a 8 semanas</td>
+              <td class="highlight-col"><strong>En Vivo en 48 Horas</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Mantenimiento & Cambios</strong></td>
+              <td>Cobro extra por cada hora/cambio</td>
+              <td class="highlight-col"><strong>100% Incluido cada mes</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Infraestructura & Dominio</strong></td>
+              <td>Tú pagas y configuras servidores aparte</td>
+              <td class="highlight-col"><strong>Dominio `.com` + Cloudflare Incluidos</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Planes de Suscripción Dinámicos -->
     <section class="section" id="planes">
       <div class="section-header">
-        <span class="sub-heading">MODELO WaaS</span>
-        <h2>Planes Transparentes de Suscripción</h2>
-        <p class="section-desc">Sin contratos forzosos. Cancela o cambia de plan en cualquier momento.</p>
+        <span class="sub-heading">PLANES SIMPLES</span>
+        <h2>Suscripción Transparente</h2>
       </div>
 
       <div class="pricing-grid">
@@ -191,25 +237,25 @@
           <div class="price-header">
             <h3>Plan Business WaaS</h3>
             <span class="badge-plan">MÁS POPULAR</span>
-            <div class="price-amount">$49 <span>USD / mes</span></div>
+            <div class="price-amount"><span class="curr-symbol">$</span><span class="amount-val" data-base="49">49</span> <span class="curr-code">USD</span><span> / mes</span></div>
             <p>Ideal para negocios locales que buscan presencia profesional completa.</p>
           </div>
           <ul class="price-features">
             <li>✓ Sitio Web Ultra Rápido (Cloudflare Edge)</li>
             <li>✓ Dominio `.com` Incluido</li>
-            <li>✓ Certificado de Seguridad SSL (`https`)</li>
-            <li>✓ Botón e Integración Directa a WhatsApp</li>
+            <li>✓ Certificado SSL de Seguridad (`https`)</li>
+            <li>✓ Botón directo a WhatsApp</li>
             <li>✓ Hasta 2 Cambios de Contenido al Mes</li>
-            <li>✓ Hosting y Soporte Técnico 24/7</li>
+            <li>✓ Soporte Técnico Continuo</li>
           </ul>
-          <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold,%20quiero%20contratar%20el%20Plan%20Business%20WaaS%20de%20$49%20USD." target="_blank" class="btn-plan-gold">Elegir Plan Business</a>
+          <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold,%20quiero%20el%20Plan%20Business%20WaaS." target="_blank" class="btn-plan-gold">Elegir Plan Business</a>
         </div>
 
         <div class="price-card featured">
           <div class="price-header">
             <h3>Plan Pro Enterprise</h3>
             <span class="badge-plan gold">ALTO RENDIMIENTO</span>
-            <div class="price-amount">$99 <span>USD / mes</span></div>
+            <div class="price-amount"><span class="curr-symbol">$</span><span class="amount-val" data-base="99">99</span> <span class="curr-code">USD</span><span> / mes</span></div>
             <p>Para empresas que requieren catálogos dinámicos y cambios continuos.</p>
           </div>
           <ul class="price-features">
@@ -217,9 +263,9 @@
             <li>✓ Cotizadores Interactivos a Medida</li>
             <li>✓ Cambios e Actualizaciones Ilimitadas</li>
             <li>✓ Configuración de Google Maps / SEO Local</li>
-            <li>✓ Soporte Prioritario 1 a 1</li>
+            <li>✓ Soporte Prioritario Directo</li>
           </ul>
-          <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold,%20me%20interesa%20el%20Plan%20Pro%20Enterprise%20de%20$99%20USD." target="_blank" class="btn-plan-featured">Iniciar con Plan Pro</a>
+          <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold,%20me%20interesa%20el%20Plan%20Pro%20Enterprise." target="_blank" class="btn-plan-featured">Iniciar con Plan Pro</a>
         </div>
 
       </div>
@@ -227,11 +273,12 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 <strong>Black Gold Digital Studio</strong>. Crafting High-End Web Experiences.</p>
+    <p>© 2026 <strong>Black Gold Digital Studio</strong>. High-End Web Architecture & WaaS Solutions.</p>
   </footer>
 
-  <!-- Script del Fondo Interactivo en Canvas -->
+  <!-- Scripts Interativos Avanzados -->
   <script>
+    // 1. Fondo de Partículas en Malla
     const canvas = document.getElementById('meshCanvas');
     const ctx = canvas.getContext('2d');
     let points = [];
@@ -250,7 +297,6 @@
         this.vx = (Math.random() - 0.5) * 0.6;
         this.vy = (Math.random() - 0.5) * 0.6;
       }
-
       update() {
         this.x += this.vx;
         this.y += this.vy;
@@ -263,7 +309,6 @@
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
       for (let i = 0; i < points.length; i++) {
         points[i].update();
         for (let j = i + 1; j < points.length; j++) {
@@ -281,6 +326,51 @@
       requestAnimationFrame(draw);
     }
     draw();
+
+    // 2. Selector de Moneda Dinámico
+    const currBtns = document.querySelectorAll('.curr-btn');
+    const amounts = document.querySelectorAll('.amount-val');
+    const symbols = document.querySelectorAll('.curr-symbol');
+    const codes = document.querySelectorAll('.curr-code');
+
+    currBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        currBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const rate = parseFloat(btn.getAttribute('data-rate'));
+        const symbol = btn.getAttribute('data-symbol');
+        const code = btn.getAttribute('data-curr');
+
+        amounts.forEach(amt => {
+          const base = parseFloat(amt.getAttribute('data-base'));
+          amt.innerText = Math.round(base * rate).toLocaleString();
+        });
+
+        symbols.forEach(s => s.innerText = symbol);
+        codes.forEach(c => c.innerText = code);
+      });
+    });
+
+    // 3. Efecto 3D Tilt en las Tarjetas
+    const tiltCards = document.querySelectorAll('.tilt-card');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -7;
+        const rotateY = ((x - centerX) / centerX) * 7;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+      });
+    });
   </script>
 </body>
 </html>
