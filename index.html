@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Black Gold Digital | World-Class WaaS Studio</title>
+  <title>Black Gold Digital — Digital presence. Refined.</title>
+  <meta name="description" content="Diseño y desarrollo de infraestructura web de alta gama para marcas y negocios que dictan las reglas. Exclusividad, precisión y rendimiento.">
+  
+  <!-- Tipografías Oficiales Quiet Luxury -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-obsidian text-primary">
 
-  <!-- Canvas de Partículas Interactivas en Malla -->
+  <!-- Canvas de Partículas en Malla (Fondo Sutil) -->
   <canvas id="meshCanvas"></canvas>
 
-  <!-- Encabezado con Selector de Moneda -->
+  <!-- Encabezado Editorial -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="#home" class="brand">
-        BLACK GOLD<span class="gold-dot">.</span>
+      <a href="#home" class="brand-logo" aria-label="Black Gold Digital Home">
+        <span class="monogram">BG</span>
+        <span class="brand-name">BLACK GOLD<span class="gold-dot">.</span></span>
       </a>
 
-      <!-- Selector de Moneda Interactivo -->
+      <!-- Selector de Moneda Interactivo (Conservado) -->
       <div class="currency-switcher">
         <button type="button" class="curr-btn active" data-curr="USD" data-symbol="$" data-rate="1">USD ($)</button>
         <button type="button" class="curr-btn" data-curr="MXN" data-symbol="$" data-rate="20">MXN ($)</button>
@@ -29,51 +34,63 @@
       </div>
 
       <nav class="nav-menu">
-        <a href="#home">Inicio</a>
-        <a href="#demos">Showcase</a>
-        <a href="#roi">Calculadora ROI</a>
-        <a href="#planes">Planes</a>
-        <a href="#faq">FAQ</a>
-        <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold%20Digital,%20me%20interesa%20un%20sitio%20web." target="_blank" class="nav-btn-gold">Iniciar Proyecto ↗</a>
+        <a href="#home" class="nav-link">Inicio</a>
+        <a href="#demos" class="nav-link">Showcase</a>
+        <a href="#roi" class="nav-link">Calculadora ROI</a>
+        <a href="#planes" class="nav-link">Planes</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold%20Digital,%20me%20interesa%20un%20sitio%20web." target="_blank" class="btn-primary-outline">Iniciar Proyecto ↗</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Principal Ultra-Elegante -->
-    <section class="hero" id="home">
-      <div class="hero-badge">⚡ ELITE WEB ARCHITECTURE STUDIO</div>
-      <h1 class="hero-title">PRESENCIA DIGITAL PRO <br><span class="text-gold">SIN COSTOS DE DESARROLLO</span></h1>
-      <p class="hero-sub">Construimos, alojamos y mantenemos el sitio web de tu negocio en la infraestructura más rápida del mundo. Todo incluido en una suscripción mensual inteligente.</p>
-      
-      <div class="hero-actions">
-        <a href="#demos" class="btn-primary-gold">Explorar Demos Interactivas</a>
-        <a href="#planes" class="btn-glass">Ver Planes WaaS</a>
-      </div>
+    <!-- Hero Section Cinematográfica -->
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="tagline-eyebrow">⚡ ELITE WEB ARCHITECTURE STUDIO</span>
+          <h1 class="hero-title">
+            Digital presence. <br>
+            <em class="italic-accent">Refined.</em>
+          </h1>
+          <p class="hero-description">
+            Diseñamos, alojamos y mantenemos la infraestructura digital de tu negocio en la red más rápida del mundo. Presencia de alto nivel sin los costos tradicionales de desarrollo.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#demos" class="btn-cta-gold">Explorar Demos Interactivas</a>
+            <a href="#planes" class="btn-secondary-link">
+              <span>Ver Planes WaaS</span>
+              <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33331 8H12.6666M12.6666 8L8.00002 3.33334M12.6666 8L8.00002 12.6667" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
 
-      <div class="hero-metrics">
-        <div class="metric-item">
-          <strong>99.9%</strong>
-          <span>Uptime Global</span>
-        </div>
-        <div class="metric-line"></div>
-        <div class="metric-item">
-          <strong>&lt; 0.4s</strong>
-          <span>Velocidad de Carga</span>
-        </div>
-        <div class="metric-line"></div>
-        <div class="metric-item">
-          <strong>100%</strong>
-          <span>Mantenimiento Incluido</span>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>99.9%</strong>
+              <span>Uptime Global</span>
+            </div>
+            <div class="metric-line"></div>
+            <div class="metric-item">
+              <strong>&lt; 0.4s</strong>
+              <span>Velocidad de Carga</span>
+            </div>
+            <div class="metric-line"></div>
+            <div class="metric-item">
+              <strong>100%</strong>
+              <span>Mantenimiento Incluido</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-  <!-- Showcase / Portafolio con Selector de Dispositivo -->
-    <section class="section" id="demos">
+    <!-- Showcase / Portafolio con Selector de Dispositivo -->
+    <section class="section-portfolio" id="demos">
       <div class="section-header">
-        <span class="sub-heading">DEMOSTRACIONES EN VIVO</span>
-        <h2>Catálogo de Plantillas de Alto Nivel</h2>
+        <span class="section-label">DEMOSTRACIONES EN VIVO</span>
+        <h2 class="section-title">Portafolio & Selección de Trabajos</h2>
         <p class="section-desc">Selecciona un dispositivo para ajustar la simulación visual de la vista previa.</p>
         
         <!-- Control de Simulación de Dispositivo -->
@@ -86,300 +103,277 @@
 
       <div class="portfolio-grid mode-desktop" id="portfolioGrid">
 
+        <!-- Tarjeta 1: Lumen & Co. -->
+        <article class="portfolio-card tilt-card">
+          <div class="browser-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">lumen.blackgoldstudios.workers.dev</span>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1000&q=85" alt="Lumen & Co. Preview" class="card-img" loading="lazy">
+            <div class="image-overlay">
+              <span class="tech-tag">Photo Studio / Creative Agency</span>
+              <a href="https://fotografia.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-meta">
+              <span class="card-niche">Estudio Fotográfico & Producción Visual</span>
+              <span class="badge-status">WaaS Completed</span>
+            </div>
+            <h3>LUMEN & CO. | Creative Visual Agency</h3>
+            <p>Plataforma cinematográfica de ultra-lujo con simulador interactivo de iluminación de estudio, cotizador dinámico de producción y galería filtrable con modales técnicos.</p>
+            <div class="card-tags">
+              <span>Lighting Lab</span><span>Production Estimator</span><span>Editorial UX</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- Tarjeta Proyecto: Lumen & Co. (Estudio Fotográfico & Productora) -->
-<article class="portfolio-card tilt-card">
-  <div class="browser-header">
-    <span class="dot red"></span>
-    <span class="dot yellow"></span>
-    <span class="dot green"></span>
-    <span class="browser-url">lumen.blackgoldstudios.workers.dev</span>
-  </div>
-  
-  <div class="card-image-wrap">
-    <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1000&q=85" alt="Lumen & Co. Preview" class="card-img">
-    <div class="image-overlay">
-      <span class="tech-tag">Photo Studio / Creative Agency</span>
-      <a href="https://fotografia.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
-    </div>
-  </div>
+        <!-- Tarjeta 2: Barber & Co. -->
+        <article class="portfolio-card tilt-card">
+          <div class="browser-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">barber.blackgoldstudios.workers.dev</span>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85" alt="Barber & Co. Preview" class="card-img" loading="lazy">
+            <div class="image-overlay">
+              <span class="tech-tag">Barbershop / Booking WebApp</span>
+              <a href="https://barber.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-meta">
+              <span class="card-niche">Barbería & Executive Grooming Club</span>
+              <span class="badge-status">WaaS Completed</span>
+            </div>
+            <h3>BARBER & CO. | Grooming Club</h3>
+            <p>Plataforma para barberías de alta gama con configurador interactivo de combos, selección de barbero y reservación de citas por WhatsApp.</p>
+            <div class="card-tags">
+              <span>Booking Engine</span><span>Pack Builder</span><span>Luxury Grooming</span>
+            </div>
+          </div>
+        </article>
 
-  <div class="card-info">
-    <div class="card-meta">
-      <span class="card-niche">Estudio Fotográfico & Producción Visual</span>
-      <span class="badge-status">WaaS Completed</span>
-    </div>
-    <h3>LUMEN & CO. | Creative Visual Agency</h3>
-    <p>Plataforma cinematográfica de ultra-lujo con simulador interactivo de iluminación de estudio, cotizador dinámico de producción y galería filtrable con modales técnicos.</p>
-    
-    <div class="card-tags">
-      <span>Lighting Lab</span>
-      <span>Production Estimator</span>
-      <span>Editorial UX</span>
-    </div>
-  </div>
-</article>
-        
-        
-        
-        <!-- Tarjeta Proyecto: Barber & Co. (Executive Grooming Club) -->
-<article class="portfolio-card tilt-card">
-  <div class="browser-header">
-    <span class="dot red"></span>
-    <span class="dot yellow"></span>
-    <span class="dot green"></span>
-    <span class="browser-url">barber.blackgoldstudios.workers.dev</span>
-  </div>
-  
-  <div class="card-image-wrap">
-    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85" alt="Barber & Co. Preview" class="card-img">
-    <div class="image-overlay">
-      <span class="tech-tag">Barbershop / Booking WebApp</span>
-      <a href="https://barber.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
-    </div>
-  </div>
+        <!-- Tarjeta 3: Aureus & Co. -->
+        <article class="portfolio-card tilt-card">
+          <div class="browser-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">aureus-law.blackgoldstudios.workers.dev</span>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Aureus Law Preview" class="card-img" loading="lazy">
+            <div class="image-overlay">
+              <span class="tech-tag">B2B Legal / Executive App</span>
+              <a href="https://despacho.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-meta">
+              <span class="card-niche">Firma Legal & Consultoría Fiscal B2B</span>
+              <span class="badge-status">WaaS Completed</span>
+            </div>
+            <h3>AUREUS & CO. | Blindaje & Consultoría</h3>
+            <p>Plataforma corporativa de ultra-lujo con simulador de igualas contable-legales con IVA, evaluador interactivo de riesgo SAT y base de precedentes judiciales.</p>
+            <div class="card-tags">
+              <span>Fee Simulator</span><span>SAT Diagnostic</span><span>Executive UX</span>
+            </div>
+          </div>
+        </article>
 
-  <div class="card-info">
-    <div class="card-meta">
-      <span class="card-niche">Barbería & Executive Grooming Club</span>
-      <span class="badge-status">WaaS Completed</span>
-    </div>
-    <h3>BARBER & CO. | Grooming Club</h3>
-    <p>Plataforma para barberías de alta gama con configurador interactivo de combos, selección de barbero y reservación de citas por WhatsApp.</p>
-    
-    <div class="card-tags">
-      <span>Booking Engine</span>
-      <span>Pack Builder</span>
-      <span>Luxury Grooming</span>
-    </div>
-  </div>
-</article>
-        
-        
-        <!-- Tarjeta Proyecto: Aureus & Co. (Firma Legal & Consultoría B2B) -->
-<article class="portfolio-card tilt-card">
-  <div class="browser-header">
-    <span class="dot red"></span>
-    <span class="dot yellow"></span>
-    <span class="dot green"></span>
-    <span class="browser-url">aureus-law.blackgoldstudios.workers.dev</span>
-  </div>
-  
-  <div class="card-image-wrap">
-    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Aureus Law Preview" class="card-img">
-    <div class="image-overlay">
-      <span class="tech-tag">B2B Legal / Executive App</span>
-      <a href="https://despacho.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
-    </div>
-  </div>
-
-  <div class="card-info">
-    <div class="card-meta">
-      <span class="card-niche">Firma Legal & Consultoría Fiscal B2B</span>
-      <span class="badge-status">WaaS Completed</span>
-    </div>
-    <h3>AUREUS & CO. | Blindaje & Consultoría</h3>
-    <p>Plataforma corporativa de ultra-lujo con simulador de igualas contable-legales con IVA, evaluador interactivo de riesgo SAT y base de precedentes judiciales.</p>
-    
-    <div class="card-tags">
-      <span>Fee Simulator</span>
-      <span>SAT Diagnostic</span>
-      <span>Executive UX</span>
-    </div>
-  </div>
-</article>     
-        
-        
-        
-        <!-- Card 1: Gym -->
+        <!-- Tarjeta 4: Gym -->
         <article class="portfolio-card tilt-card">
           <div class="browser-header">
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">blackgold-gym.pages.dev</span>
           </div>
           <div class="card-image-wrap">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Apex Performance Preview">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Apex Performance Preview" class="card-img" loading="lazy">
             <div class="image-overlay">
               <a href="https://gym.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
             </div>
           </div>
           <div class="card-info">
-            <span class="card-niche">Fitness & Performance</span>
+            <div class="card-meta">
+              <span class="card-niche">Fitness & Performance</span>
+            </div>
             <h3>Apex Performance Club</h3>
             <p>Visor dinámico de disciplinas, tipografía masiva e integración de pases VIP.</p>
           </div>
         </article>
-            <article class="portfolio-card tilt-card">
-  <div class="browser-header">
-    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-    <span class="browser-url">autos.httpsblackgoldstudios.workers.dev</span>
-  </div>
-  <div class="card-image-wrap">
-    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Apex Motors & Trade Preview">
-    <div class="image-overlay">
-      <a href="https://agencia-autos.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
-    </div>
-  </div>
-  <div class="card-info">
-    <span class="card-niche">Showroom Automotriz de Élite</span>
-    <h3>Apex Motors & Trade</h3>
-    <p>Plataforma de alta gama con selector de divisas en tiempo real, inventario certificado y estética dark luxury.</p>
-  </div>
-</article>
-       
-        <!-- Tarjeta Proyecto: El Álamo (Forrajera & Agroindustrial) -->
-<article class="portfolio-card tilt-card">
-  <div class="browser-header">
-    <span class="dot red"></span>
-    <span class="dot yellow"></span>
-    <span class="dot green"></span>
-    <span class="browser-url">elalamo-agro.blackgoldstudios.workers.dev</span>
-  </div>
-  
-  <div class="card-image-wrap">
-    <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1000&q=85" alt="El Álamo Distribuidora Agroindustrial Preview" class="card-img">
-    <div class="image-overlay">
-      <span class="tech-tag">B2B Agro / Interactive WebApp</span>
-      <a href="https://agroindustrial.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
-    </div>
-  </div>
 
-  <div class="card-info">
-    <div class="card-meta">
-      <span class="card-niche">Sector Agroindustrial & Fletes Pesados</span>
-      <span class="badge-status">WaaS Completed</span>
-    </div>
-    <h3>El Álamo | Distribuidora Agroindustrial</h3>
-    <p>Plataforma B2B de alta gama con calculadora nutricional de materia seca, inspector dinámico de fichas técnicas y cotizador automático de logística en tiempo real.</p>
-    
-    <div class="card-tags">
-      <span>Calculadora JS</span>
-      <span>Engineers UX</span>
-      <span>Fast Deploy</span>
-    </div>
-  </div>
-</article>
-        <!-- Card 2: Pizzería -->
+        <!-- Tarjeta 5: Autos -->
+        <article class="portfolio-card tilt-card">
+          <div class="browser-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">autos.httpsblackgoldstudios.workers.dev</span>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Apex Motors Preview" class="card-img" loading="lazy">
+            <div class="image-overlay">
+              <a href="https://agencia-autos.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-meta">
+              <span class="card-niche">Showroom Automotriz de Élite</span>
+            </div>
+            <h3>Apex Motors & Trade</h3>
+            <p>Plataforma de alta gama con selector de divisas en tiempo real, inventario certificado y estética dark luxury.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 6: El Álamo -->
+        <article class="portfolio-card tilt-card">
+          <div class="browser-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">elalamo-agro.blackgoldstudios.workers.dev</span>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1000&q=85" alt="El Álamo Preview" class="card-img" loading="lazy">
+            <div class="image-overlay">
+              <span class="tech-tag">B2B Agro / Interactive WebApp</span>
+              <a href="https://agroindustrial.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-meta">
+              <span class="card-niche">Sector Agroindustrial & Fletes Pesados</span>
+              <span class="badge-status">WaaS Completed</span>
+            </div>
+            <h3>El Álamo | Distribuidora Agroindustrial</h3>
+            <p>Plataforma B2B de alta gama con calculadora nutricional de materia seca, inspector dinámico de fichas técnicas y cotizador automático de logística en tiempo real.</p>
+            <div class="card-tags">
+              <span>Calculadora JS</span><span>Engineers UX</span><span>Fast Deploy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 7: Pizzería -->
         <article class="portfolio-card tilt-card">
           <div class="browser-header">
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">blackgold-pizzeria.pages.dev</span>
           </div>
           <div class="card-image-wrap">
-            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Pizza & Forno Preview">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Pizza & Forno Preview" class="card-img" loading="lazy">
             <div class="image-overlay">
               <a href="https://pizzeria.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
             </div>
           </div>
           <div class="card-info">
-            <span class="card-niche">Gastronomía Gourmet</span>
+            <div class="card-meta">
+              <span class="card-niche">Gastronomía Gourmet</span>
+            </div>
             <h3>Pizza & Forno</h3>
             <p>Carta interactiva sobria, selector de modalidad de pedido y cotización automatizada.</p>
           </div>
         </article>
-<article class="portfolio-card tilt-card">
-  <div class="browser-header">
-    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-    <span class="browser-url">papeleria.httpsblackgoldstudios.workers.dev</span>
-  </div>
-  <div class="card-image-wrap">
-    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Grafika Papelería Preview">
-    <div class="image-overlay">
-      <a href="https://papeleria.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
-    </div>
-  </div>
-  <div class="card-info">
-    <span class="card-niche">Comercio & Suministros</span>
-    <h3>Grafika Papelería</h3>
-    <p>Plataforma moderna para surtido de listas escolares, suministros corporativos y cotizaciones directas por WhatsApp.</p>
-  </div>
-</article>
-        <!-- Card 3: Taller Mecánico -->
+
+        <!-- Tarjeta 8: Papelería -->
+        <article class="portfolio-card tilt-card">
+          <div class="browser-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">papeleria.httpsblackgoldstudios.workers.dev</span>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Grafika Papelería Preview" class="card-img" loading="lazy">
+            <div class="image-overlay">
+              <a href="https://papeleria.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-meta">
+              <span class="card-niche">Comercio & Suministros</span>
+            </div>
+            <h3>Grafika Papelería</h3>
+            <p>Plataforma moderna para surtido de listas escolares, suministros corporativos y cotizaciones directas por WhatsApp.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 9: Taller -->
         <article class="portfolio-card tilt-card">
           <div class="browser-header">
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">blackgold-taller.pages.dev</span>
           </div>
           <div class="card-image-wrap">
-            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Motors & Co. Preview">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Motors & Co. Preview" class="card-img" loading="lazy">
             <div class="image-overlay">
               <a href="https://taller.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
             </div>
           </div>
           <div class="card-info">
-            <span class="card-niche">Automotriz & Detailing</span>
+            <div class="card-meta">
+              <span class="card-niche">Automotriz & Detailing</span>
+            </div>
             <h3>Motors & Co.</h3>
             <p>Cotizador dinámico por vehículo y agendamiento directo de mantenimiento.</p>
           </div>
         </article>
 
-        <!-- Card 4: Panadería -->
+        <!-- Tarjeta 10: Panadería -->
         <article class="portfolio-card tilt-card">
           <div class="browser-header">
             <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
             <span class="browser-url">blackgold-panaderia.pages.dev</span>
           </div>
           <div class="card-image-wrap">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Miga & Miel Preview">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Miga & Miel Preview" class="card-img" loading="lazy">
             <div class="image-overlay">
               <a href="https://panaderia.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
             </div>
           </div>
           <div class="card-info">
-            <span class="card-niche">Repostería & Bakery</span>
+            <div class="card-meta">
+              <span class="card-niche">Repostería & Bakery</span>
+            </div>
             <h3>Miga & Miel</h3>
             <p>Diseño editorial artesanal con armador de cajas surtidas y pedidos en tiempo real.</p>
           </div>
         </article>
 
-       <!-- Tarjeta Proyecto: Café Central (Specialty Coffee & Bistro) -->
-<article class="portfolio-card tilt-card">
-  <div class="browser-header">
-    <span class="dot red"></span>
-    <span class="dot yellow"></span>
-    <span class="dot green"></span>
-    <span class="browser-url">cafecentral.blackgoldstudios.workers.dev</span>
-  </div>
-  
-  <div class="card-image-wrap">
-    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=85" alt="Café Central Preview" class="card-img">
-    <div class="image-overlay">
-      <span class="tech-tag">Bistro / Specialty Coffee App</span>
-      <a href="https://cafeteria.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
-    </div>
-  </div>
-
-  <div class="card-info">
-    <div class="card-meta">
-      <span class="card-niche">Coffee Shop & Bistro Gourmet</span>
-      <span class="badge-status">WaaS Completed</span>
-    </div>
-    <h3>Café Central | Specialty Coffee</h3>
-    <p>Plataforma interactiva con laboratorio barista de orígenes y métodos de extracción, menú filtrable y sistema Pick-Up Express.</p>
-    
-    <div class="card-tags">
-      <span>Barista Lab</span>
-      <span>Pick-Up System</span>
-      <span>Speed UX</span>
-    </div>
-  </div>
-</article>
+        <!-- Tarjeta 11: Café Central -->
+        <article class="portfolio-card tilt-card">
+          <div class="browser-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="browser-url">cafecentral.blackgoldstudios.workers.dev</span>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=85" alt="Café Central Preview" class="card-img" loading="lazy">
+            <div class="image-overlay">
+              <span class="tech-tag">Bistro / Specialty Coffee App</span>
+              <a href="https://cafeteria.httpsblackgoldstudios.workers.dev/" target="_blank" rel="noopener noreferrer" class="preview-btn">Probar Demo Live ↗</a>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-meta">
+              <span class="card-niche">Coffee Shop & Bistro Gourmet</span>
+              <span class="badge-status">WaaS Completed</span>
+            </div>
+            <h3>Café Central | Specialty Coffee</h3>
+            <p>Plataforma interactiva con laboratorio barista de orígenes y métodos de extracción, menú filtrable y sistema Pick-Up Express.</p>
+            <div class="card-tags">
+              <span>Barista Lab</span><span>Pick-Up System</span><span>Speed UX</span>
+            </div>
+          </div>
+        </article>
 
       </div>
     </section>
 
-    <!-- Calculadora Interactiva de ROI para el Cliente -->
-    <section class="section" id="roi">
+    <!-- Calculadora de ROI -->
+    <section class="section-roi" id="roi">
       <div class="roi-card">
         <div class="roi-header">
-          <span class="sub-heading">VALOR REAL PARA TU NEGOCIO</span>
+          <span class="section-label">VALOR REAL PARA TU NEGOCIO</span>
           <h2>Calculadora de Rentabilidad WaaS</h2>
           <p>¿Cuántos clientes o ventas nuevas necesitas para que tu página web se pague sola?</p>
         </div>
 
         <div class="roi-calculator">
           <div class="slider-group">
-            <label>Ticket Promedio de Venta/Servicio en tu negocio:</label>
+            <label for="ticketSlider">Ticket Promedio de Venta/Servicio en tu negocio:</label>
             <div class="slider-val"><span class="curr-symbol">$</span><span id="ticketVal">50</span> <span class="curr-code">USD</span></div>
             <input type="range" id="ticketSlider" min="10" max="500" value="50" step="10">
           </div>
@@ -398,10 +392,10 @@
       </div>
     </section>
 
-    <!-- Tabla Comparativa -->
-    <section class="section" id="comparativa">
+    <!-- Tabla Comparativa WaaS -->
+    <section class="section-comparativa" id="comparativa">
       <div class="section-header">
-        <span class="sub-heading">POR QUÉ BLACK GOLD</span>
+        <span class="section-label">POR QUÉ BLACK GOLD</span>
         <h2>Agencia Tradicional vs. Modelo WaaS</h2>
         <p class="section-desc">Descubre por qué las empresas modernas eligen el modelo de suscripción.</p>
       </div>
@@ -441,15 +435,14 @@
       </div>
     </section>
 
-    <!-- Planes de Suscripción Dinámicos -->
-    <section class="section" id="planes">
+    <!-- Planes de Suscripción -->
+    <section class="section-planes" id="planes">
       <div class="section-header">
-        <span class="sub-heading">PLANES SIMPLES</span>
+        <span class="section-label">PLANES SIMPLES</span>
         <h2>Suscripción Transparente</h2>
       </div>
 
       <div class="pricing-grid">
-
         <div class="price-card">
           <div class="price-header">
             <h3>Plan Business WaaS</h3>
@@ -484,14 +477,13 @@
           </ul>
           <a href="https://api.whatsapp.com/send?phone=528611265737&text=Hola%20Black%20Gold,%20me%20interesa%20el%20Plan%20Pro%20Enterprise." target="_blank" class="btn-plan-featured">Iniciar con Plan Pro</a>
         </div>
-
       </div>
     </section>
 
-    <!-- Preguntas Frecuentes (FAQ Accordion) -->
-    <section class="section" id="faq">
+    <!-- Preguntas Frecuentes -->
+    <section class="section-faq" id="faq">
       <div class="section-header">
-        <span class="sub-heading">TRANSPARENCIA TOTAL</span>
+        <span class="section-label">TRANSPARENCIA TOTAL</span>
         <h2>Preguntas Frecuentes</h2>
       </div>
 
@@ -520,10 +512,12 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 <strong>Black Gold Digital Studio</strong>. World-Class WaaS Architecture.</p>
+    <div class="footer-inner">
+      <p>© 2026 <strong>Black Gold Digital Studio</strong>. World-Class WaaS Architecture.</p>
+    </div>
   </footer>
 
-  <!-- Scripts Interactivos de Alto Nivel -->
+  <!-- Scripts Interactivos -->
   <script>
     // 1. Canvas Background
     const canvas = document.getElementById('meshCanvas');
@@ -538,8 +532,8 @@
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.vx = (Math.random() - 0.5) * 0.6;
-        this.vy = (Math.random() - 0.5) * 0.6;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = (Math.random() - 0.5) * 0.4;
       }
       update() {
         this.x += this.vx; this.y += this.vy;
@@ -547,7 +541,7 @@
         if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
       }
     }
-    for (let i = 0; i < 60; i++) points.push(new Point());
+    for (let i = 0; i < 50; i++) points.push(new Point());
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -555,12 +549,12 @@
         points[i].update();
         for (let j = i + 1; j < points.length; j++) {
           const dist = Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y);
-          if (dist < 140) {
+          if (dist < 130) {
             ctx.beginPath();
             ctx.moveTo(points[i].x, points[i].y);
             ctx.lineTo(points[j].x, points[j].y);
-            ctx.strokeStyle = `rgba(212, 175, 55, ${1 - dist / 140 * 0.85})`;
-            ctx.lineWidth = 0.6;
+            ctx.strokeStyle = `rgba(184, 154, 90, ${1 - dist / 130 * 0.4})`;
+            ctx.lineWidth = 0.5;
             ctx.stroke();
           }
         }
@@ -631,13 +625,13 @@
 
     ticketSlider.addEventListener('input', updateROI);
 
-    // 5. Tilt 3D
+    // 5. Tilt 3D Suave
     document.querySelectorAll('.tilt-card').forEach(card => {
       card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left - rect.width / 2;
         const y = e.clientY - rect.top - rect.height / 2;
-        card.style.transform = `perspective(1000px) rotateX(${-(y / rect.height) * 8}deg) rotateY(${(x / rect.width) * 8}deg) translateY(-8px)`;
+        card.style.transform = `perspective(1000px) rotateX(${-(y / rect.height) * 4}deg) rotateY(${(x / rect.width) * 4}deg) translateY(-4px)`;
       });
       card.addEventListener('mouseleave', () => {
         card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
